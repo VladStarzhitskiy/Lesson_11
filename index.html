@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <form accept-charset="utf-8" action="mailto:test@test.test"
+    autocomplete="off" method="POST" name="login" novalidate  target="_blank"
+    id="form1">
+    
+    
+    <!--autocomplete="off" - что бы браузер не запоминал значения которые мы вводим-->
+    
+    <!--кодировка action принимает путь к разработчику
+    enctype=""
+            multipart/form-data - при отправке файла
+            text/plane - отправка текста
+            method =get
+                    post
+    -->
+
+    
+
+
+    <fieldset disabled form="form1" name="contacts"><!--тег в котором можно объеденить несколько полей-->
+        <legend>Контактная Форма</legend>
+        <p>
+        <label for="name">Имя <em>*</em>
+            <input type="text" id="name"><!--имя строки-->
+    </label>
+    </p>
+        
+        <p><label for="email">E-mail</label>
+        <input type="email" id="email"></p>
+    </fieldset>
+
+
+
+    <input type="button" value="Привет"> 
+    <input type="checkbox">
+    <label><input type="checkbox">Нажми на меня</label>
+    <input type="color" name="color">
+    <input type="date">
+    <input type="datetime-local">
+    <input type="time">
+    <input type="week">
+    <input type="email" value="text@text.text">
+    <input type="file" accept="audio/*">
+    <!--
+        accept=""
+                .exe
+    -->
+    <input type="month">
+    <input type="number" min="0" max="10" step="2">
+    <input type="text" autocomplete="on" autofocus placeholder="Текст">
+    <input type="password">
+    <input type="radio">
+    <!--
+        Checked - поддерживается radio и checkbox
+    -->
+    <input type="range" min="0" max="100">
+    <input type="reset"><!--Кнопка сброса формы-->
+    <input type="search"><!--форма для поиска-->
+    <input type="submit">
+    <input type="url"><!--поле что бы ввести ссылку-->
+    <input type="image" alt="Пуск" src="https://www.google.com.ua/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+    <input type="hidden" value="Скрытое значение" name="hidden">
+
+
+
+
+<!--Общие атребуты
+autocomplete="on/off" - браузер запоминает текс который вводился раньше
+autofocus - На этом елементе будет фокусирываться курсор
+disabled - Отключает текстовое поле для заданного элемента
+form="" - при отправки формы передаются все параметры если есть данная привязкак форме
+name=""- Нужно задавать всем полям
+readonly - если применить, то нельзя будет изменить значение 4
+required- если не заполнить это поле, текс не отправиться(указывается в поле обязательном для заполнения)
+
+
+Поддерживается namber range date datetime dadetime-local month time week
+max="10"
+min="-5"
+max="2019-09-10"
+min="22:10"
+
+
+Текстовые поля 
+maxlength="10"
+placeholder="Текст"
+size="5" ограничивает ширину импута до количества символов
+
+
+Поле ввода email и file
+multiple - позволяет добавить несколько файлов или почт через запятую
+-->
+
+
+    <p><input type="submit" value="Отправить"></p>
+
+
+</form>
+
+<form>
+    <input type="text"
+    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required
+    placeholder="000-000-0000">
+    <input type="email" size="5"> <!--емайлу тоже нужно задавать required -->
+    <textarea rows="10" cols="5"> <!--многострочный текст-->
+        текс
+    </textarea>
+    <!--
+        Поддерживает такие атрибуты:
+        Autofocus
+        disabled
+        form=""
+        maxlength=""
+        name=""
+        placeholder=""
+        readonly=""
+        required
+        wrap="" - сохраняет или не сохраняет переносы строк
+            hard - сохраняет
+            soft - не сохраняет
+    -->
+
+    <select name="list">
+        <option>Выберите</option>
+        <option value="один">1</option>
+        <option label="2">dsdfdsfdsssssssssssssssssssssfsdfsd2</option>
+        <option>3</option>
+        <option disabled>4</option>
+        <optgroup label="Подпункты">
+            <option>5</option>
+            <option>6</option>
+            </option>
+        </optgroup>
+    </select><!--Выпадающий список-->
+
+    <button type="submit">
+
+    </button>
+
+    <label>
+        <input type="radio" name="option">Пункт 1</label>
+        <input type="radio" name="option">Пункт 2</label>
+        <input type="radio" name="option">Пункт 2</label>
+        <input type="radio" name="option">Пункт 2</label>
+    </label>
+
+
+
+
+
+
+    <input type="submit">
+   
+    <!--
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+    -->
+</form>
+
+
+
+</body>
+</html>
